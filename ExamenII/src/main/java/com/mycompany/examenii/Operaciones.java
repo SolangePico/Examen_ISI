@@ -56,4 +56,18 @@ public class Operaciones {
             return n1 / n2;
         }
     }
+    
+    /**
+     * metodo que devuleve la potencia de dos numeros enteros.
+     *
+     * @param a
+     * @param b
+     * @return
+     */
+    public static double potencia(int a, int b) {
+        double n1, n2;
+        n1 = (double) a;
+        n2 = (double) b;
+        return Math.pow(n1, n2);
+    }
 }

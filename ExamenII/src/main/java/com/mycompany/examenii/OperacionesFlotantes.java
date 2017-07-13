@@ -12,12 +12,37 @@ package com.mycompany.examenii;
  * @author solan
  */
 public class OperacionesFlotantes {
-    
-/**
-     * Método que realiza la suma entre dos números flotantes.
+
+    /**
+     * metodo que devuleve la multiplicacion entre flotantes.
      *
-     * @return the a + b
+     * @param n1
+     * @param n2
+     * @return
      */
+    public float multiplicacion(float n1, float n2) {
+        return n1 * n2;
+    }
+
+    /**
+     * Metodo que devueleve la division entre flotantes.
+     *
+     * @param n1
+     * @param n2
+     * @return
+     */
+    public float division(float n1, float n2) {
+        if (n2 == 0) {
+            return -1;
+        } else {
+            return n1 / n2;
+        }
+    }
+        /**
+         * Método que realiza la suma entre dos números flotantes.
+         *
+         * @return the a + b
+         */
     public static float suma(float a, float b) {
         return a + b;
     }
