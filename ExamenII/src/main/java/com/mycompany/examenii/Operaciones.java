@@ -56,4 +56,17 @@ public class Operaciones {
             return n1 / n2;
         }
     }
+    /**
+     * Metodo que devuelve el modulo del numero 1 frente al n2.
+     * @param n1
+     * @param n2
+     * @return 
+     */
+    public int modulo(int n1,int n2){
+        if (n2 == 0) {
+            return -1;
+        } else {
+            return n1%n2;
+        }
+    }
 }
