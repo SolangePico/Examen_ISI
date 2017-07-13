@@ -1,16 +1,11 @@
-/**
- * Clase que contiene las operaciones matemáticas entre dos números enteros.
- *
- * @author Alejandro Torres, Solange Pico, David Suaréz.
- * @version 1.0
- *
- */
 package com.mycompany.examenii;
 
 /**
- *
- * @author dovac
+ * Clase que tendra las operaciones de suma, resta, multiplicacion, division.
+ * @author: Solange Pico, David Suarez, Alejandro Torres.
+ * @version: 12/07/2017
  */
+
 public class Operaciones {
 
     /**
@@ -18,7 +13,7 @@ public class Operaciones {
      *
      * @return the a + b
      */
-    public static int suma(int a, int b) {
+    public int suma(int a, int b) {
         return a + b;
     }
 
@@ -27,7 +22,7 @@ public class Operaciones {
      *
      * @return the a - b
      */
-    public static int resta(int a, int b) {
+    public int resta(int a, int b) {
         return a - b;
     }
 
@@ -64,10 +59,24 @@ public class Operaciones {
      * @param b
      * @return
      */
-    public static double potencia(int a, int b) {
+    public double potencia(int a, int b) {
         double n1, n2;
         n1 = (double) a;
         n2 = (double) b;
         return Math.pow(n1, n2);
+    }
+    
+    /**
+     * Metodo que devuelve el modulo del numero 1 frente al n2.
+     * @param n1
+     * @param n2
+     * @return 
+     */
+    public int modulo(int n1,int n2){
+        if (n2 == 0) {
+            return -1;
+        } else {
+            return n1%n2;
+        }
     }
 }

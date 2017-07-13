@@ -1,52 +1,95 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.mycompany.examenii;
 
 import java.util.Scanner;
 
 /**
+ * Clase principal en la cual estara el menu, el mismo que llamara con que desea
+ * hacer las operaciones con numeros o flotantes.
  *
- * @author solan
+ * @author: Solange Pico, David Suarez, Alejandro Torres.
+ * @version: 12/07/2017
  */
 public class Started {
 
-        //Campos de la clase
-    Scanner sc = new Scanner(System.in);
-    private int op;
-    private int p;
-    
-    //public void menu{
-    /*do {
-            do {
-                System.out.println();
-                System.out.println("Bienvenido");
-                System.out.println("1. Suma de números");
-                System.out.println("2. Resta de número");
+    public static void main(String[] args) {
+        int op, op1, a, b;
+        Scanner sc = new Scanner(System.in);
+        Operaciones ope = new Operaciones();
+        OperacionesFlotantes ope1 = new OperacionesFlotantes();
+        System.out.println("Ingrese la opcion que desea");
+        System.out.println("Quiere una opercaion con numero enteros o flotantes?");
+        op = sc.nextInt();
+        switch (op) {
+            case 1:
+                System.out.println("1. Suma");
+                System.out.println("2. resta");
                 System.out.println("3. Multiplicacion");
-                System.out.println("4. Division");
-                System.out.println("5. Salir");
-                System.out.println();
-                System.out.println("Eliga una opción: ");
-                op = sc.nextInt();
-                if (op < 0 || op > 5) {
-                    System.out.println("!Opción Incorrecta, introduzca una válida");
-                }
-            } while (op < 0 || op > 7);
-            switch (op) {
-                case 1:
-                    fac.inicio();
-                    do{
-                    System.out.println("Desea calcular otro numero: (1.S/2.N)");
-                    p = sc.nextInt();
-                    if (p == 1) {
-                        fac.inicio();
-                    } else {
-                        System.out.println("Saliendo de factorial");
+                System.out.println("4.  Division");
+                System.out.println("5. Exponencial");
+                System.out.println("6. Modulo");
+                op1 = sc.nextInt();
+                switch (op1) {
+                    case 1:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope.suma(a, b));
                         break;
-                    }
-                    }while(p == 1);
-                    break;*/
-            }
+                    case 2:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope.resta(a, b));
+                        break;
+                    case 3:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope.multiplicacion(a, b));
+                        break;
+                    case 4:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope.division(a, b));
+                        break;
+                    case 5:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope.potencia(a, b));
+                        break;
+                    case 6:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope.modulo(a, b));
+                        break;
+                }
+            case 2:
+                System.out.println("1. Suma");
+                System.out.println("2. resta");
+                System.out.println("3. Multiplicacion");
+                System.out.println("4.  Division");
+                System.out.println("5. Exponencial");
+                System.out.println("6. Modulo");
+                op1 = sc.nextInt();
+                switch (op1) {
+                    case 1:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope1.suma(a, b));
+                        break;
+                    case 2:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope1.resta(a, b));
+                        break;
+                    case 3:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope1.multiplicacion(a, b));
+                        break;
+                    case 4:
+                        a = sc.nextInt();
+                        b = sc.nextInt();
+                        System.out.println("La respuesta es:" + ope1.division(a, b));
+                        break;
+                }
+        }
+    }
+}

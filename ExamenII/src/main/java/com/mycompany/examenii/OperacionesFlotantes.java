@@ -1,16 +1,11 @@
-/**
- * Clase que contiene las operaciones matemáticas entre dos números flotantes.
- *
- * @author Alejandro Torres, Solange Pico, David Suaréz.
- * @version 1.0
- *
- */
 package com.mycompany.examenii;
 
 /**
- *
- * @author solan
+ * Clase que tendra las operaciones de suma, resta, multiplicacion, division.
+ * @author: Solange Pico, David Suarez, Alejandro Torres.
+ * @version: 12/07/2017
  */
+
 public class OperacionesFlotantes {
 
     /**
@@ -38,12 +33,13 @@ public class OperacionesFlotantes {
             return n1 / n2;
         }
     }
-        /**
-         * Método que realiza la suma entre dos números flotantes.
-         *
-         * @return the a + b
-         */
-    public static float suma(float a, float b) {
+    
+    /**
+     * Método que realiza la suma entre dos números flotantes.
+     *
+     * @return the a + b
+     */
+    public float suma(float a, float b) {
         return a + b;
     }
 
@@ -52,7 +48,7 @@ public class OperacionesFlotantes {
      *
      * @return the a - b
      */
-    public static float resta(float a, float b) {
+    public float resta(float a, float b) {
         return a - b;
     }
 }
